@@ -14385,7 +14385,7 @@ div.jp-OutputPrompt {
 <div class="slides"><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<div> <img src="Assets/covid_spikes.jpg" width="150" align ='left' alt="alt_text"> </div><h1 id="Coronavirus-(COVID-19)">Coronavirus (COVID-19)<a class="anchor-link" href="#Coronavirus-(COVID-19)">&#182;</a></h1><p><br>
+<div> <img src="Assets/Displayed/covid_spikes.jpg" width="150" align ='left' alt="alt_text"> </div><h1 id="Coronavirus-(COVID-19)">Coronavirus (COVID-19)<a class="anchor-link" href="#Coronavirus-(COVID-19)">&#182;</a></h1><p><br>
 <br>
 <u><b>Datasets:</b></u>  <br></p>
 <ul>
@@ -14407,11 +14407,48 @@ Raw data <a href =https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
 </ul>
 
 </div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="sa">f</span><span class="s1">&#39;Updated as of </span><span class="si">{</span><span class="n">datefile</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">-%m-%Y&quot;</span><span class="p">)</span><span class="si">}</span><span class="s1">&#39;</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>&#39;Updated as of 03-01-2022&#39;</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Confirmed-cases---what-the-data-looks-like-(as-downloaded-from-raw-file)">Confirmed cases - what the data looks like (as downloaded from raw file)<a class="anchor-link" href="#Confirmed-cases---what-the-data-looks-like-(as-downloaded-from-raw-file)">&#182;</a></h1><p>Filtered for France
-<img src="Assets/Confirmed_cases.png" alt="alt text"></p>
+<img src="Assets/Displayed/Confirmed_cases.png" alt="alt text"></p>
 
 </div>
 </div></section><section>
@@ -14422,7 +14459,7 @@ Raw data <a href =https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">confirmed_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -14441,7 +14478,7 @@ Raw data <a href =https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -14475,22 +14512,22 @@ Raw data <a href =https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
       <th>1/26/20</th>
       <th>1/27/20</th>
       <th>...</th>
-      <th>12/10/21</th>
-      <th>12/11/21</th>
-      <th>12/12/21</th>
-      <th>12/13/21</th>
-      <th>12/14/21</th>
-      <th>12/15/21</th>
-      <th>12/16/21</th>
-      <th>12/17/21</th>
-      <th>12/18/21</th>
-      <th>12/19/21</th>
+      <th>12/25/21</th>
+      <th>12/26/21</th>
+      <th>12/27/21</th>
+      <th>12/28/21</th>
+      <th>12/29/21</th>
+      <th>12/30/21</th>
+      <th>12/31/21</th>
+      <th>1/1/22</th>
+      <th>1/2/22</th>
+      <th>1/3/22</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>Other</td>
+      <td>NaN</td>
       <td>Afghanistan</td>
       <td>33.93911</td>
       <td>67.709953</td>
@@ -14501,20 +14538,20 @@ Raw data <a href =https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>157858</td>
-      <td>157858</td>
-      <td>157858</td>
-      <td>157648</td>
-      <td>157660</td>
-      <td>157665</td>
-      <td>157725</td>
-      <td>157734</td>
-      <td>157745</td>
-      <td>157787</td>
+      <td>157895</td>
+      <td>157951</td>
+      <td>157967</td>
+      <td>157998</td>
+      <td>158037</td>
+      <td>158056</td>
+      <td>158084</td>
+      <td>158107</td>
+      <td>158189</td>
+      <td>158183</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Other</td>
+      <td>NaN</td>
       <td>Albania</td>
       <td>41.15330</td>
       <td>20.168300</td>
@@ -14525,20 +14562,20 @@ Raw data <a href =https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>203215</td>
-      <td>203524</td>
-      <td>203787</td>
-      <td>203925</td>
-      <td>204301</td>
-      <td>204627</td>
-      <td>204928</td>
-      <td>205224</td>
-      <td>205549</td>
-      <td>205777</td>
+      <td>207542</td>
+      <td>207709</td>
+      <td>207709</td>
+      <td>208352</td>
+      <td>208899</td>
+      <td>208899</td>
+      <td>210224</td>
+      <td>210224</td>
+      <td>210885</td>
+      <td>210885</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Other</td>
+      <td>NaN</td>
       <td>Algeria</td>
       <td>28.03390</td>
       <td>1.659600</td>
@@ -14549,20 +14586,20 @@ Raw data <a href =https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>212434</td>
-      <td>212652</td>
-      <td>212848</td>
-      <td>213058</td>
-      <td>213288</td>
-      <td>213533</td>
-      <td>213745</td>
-      <td>214044</td>
-      <td>214330</td>
-      <td>214592</td>
+      <td>216376</td>
+      <td>216637</td>
+      <td>216930</td>
+      <td>217265</td>
+      <td>217647</td>
+      <td>218037</td>
+      <td>218432</td>
+      <td>218818</td>
+      <td>219159</td>
+      <td>219532</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Other</td>
+      <td>NaN</td>
       <td>Andorra</td>
       <td>42.50630</td>
       <td>1.521800</td>
@@ -14573,20 +14610,20 @@ Raw data <a href =https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>19440</td>
-      <td>19440</td>
-      <td>19440</td>
-      <td>19440</td>
-      <td>20136</td>
-      <td>20136</td>
-      <td>20549</td>
-      <td>20549</td>
-      <td>20549</td>
-      <td>20549</td>
+      <td>21730</td>
+      <td>21730</td>
+      <td>22332</td>
+      <td>22540</td>
+      <td>22823</td>
+      <td>23122</td>
+      <td>23740</td>
+      <td>23740</td>
+      <td>23740</td>
+      <td>24502</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Other</td>
+      <td>NaN</td>
       <td>Angola</td>
       <td>-11.20270</td>
       <td>17.873900</td>
@@ -14597,20 +14634,20 @@ Raw data <a href =https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
       <td>0</td>
       <td>0</td>
       <td>...</td>
-      <td>65371</td>
-      <td>65397</td>
-      <td>65404</td>
-      <td>65404</td>
-      <td>65431</td>
-      <td>65565</td>
-      <td>65648</td>
-      <td>65760</td>
-      <td>65868</td>
-      <td>65938</td>
+      <td>71142</td>
+      <td>71752</td>
+      <td>71752</td>
+      <td>76787</td>
+      <td>78475</td>
+      <td>79871</td>
+      <td>81593</td>
+      <td>82398</td>
+      <td>82920</td>
+      <td>83764</td>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 702 columns</p>
+<p>5 rows × 717 columns</p>
 </div>
 </div>
 
@@ -14632,224 +14669,10 @@ Raw data <a href =https://raw.githubusercontent.com/CSSEGISandData/COVID-19/mast
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">confirmed_cases</span><span class="p">[(</span><span class="n">confirmed_cases</span><span class="p">[</span><span class="s1">&#39;Country/Region&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;France&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">confirmed_cases</span><span class="p">[</span><span class="s1">&#39;Province/State&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;Other&#39;</span><span class="p">)]</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Province/State</th>
-      <th>Country/Region</th>
-      <th>Lat</th>
-      <th>Long</th>
-      <th>Date</th>
-      <th>Cases</th>
-      <th>Newcases</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>80968</th>
-      <td>Other</td>
-      <td>France</td>
-      <td>46.2276</td>
-      <td>2.2137</td>
-      <td>2020-01-22</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>80969</th>
-      <td>Other</td>
-      <td>France</td>
-      <td>46.2276</td>
-      <td>2.2137</td>
-      <td>2020-01-23</td>
-      <td>0</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>80970</th>
-      <td>Other</td>
-      <td>France</td>
-      <td>46.2276</td>
-      <td>2.2137</td>
-      <td>2020-01-24</td>
-      <td>2</td>
-      <td>2.0</td>
-    </tr>
-    <tr>
-      <th>80971</th>
-      <td>Other</td>
-      <td>France</td>
-      <td>46.2276</td>
-      <td>2.2137</td>
-      <td>2020-01-25</td>
-      <td>3</td>
-      <td>1.0</td>
-    </tr>
-    <tr>
-      <th>80972</th>
-      <td>Other</td>
-      <td>France</td>
-      <td>46.2276</td>
-      <td>2.2137</td>
-      <td>2020-01-26</td>
-      <td>3</td>
-      <td>0.0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>81661</th>
-      <td>Other</td>
-      <td>France</td>
-      <td>46.2276</td>
-      <td>2.2137</td>
-      <td>2021-12-15</td>
-      <td>8202064</td>
-      <td>65427.0</td>
-    </tr>
-    <tr>
-      <th>81662</th>
-      <td>Other</td>
-      <td>France</td>
-      <td>46.2276</td>
-      <td>2.2137</td>
-      <td>2021-12-16</td>
-      <td>8262620</td>
-      <td>60556.0</td>
-    </tr>
-    <tr>
-      <th>81663</th>
-      <td>Other</td>
-      <td>France</td>
-      <td>46.2276</td>
-      <td>2.2137</td>
-      <td>2021-12-17</td>
-      <td>8320607</td>
-      <td>57987.0</td>
-    </tr>
-    <tr>
-      <th>81664</th>
-      <td>Other</td>
-      <td>France</td>
-      <td>46.2276</td>
-      <td>2.2137</td>
-      <td>2021-12-18</td>
-      <td>8379143</td>
-      <td>58536.0</td>
-    </tr>
-    <tr>
-      <th>81665</th>
-      <td>Other</td>
-      <td>France</td>
-      <td>46.2276</td>
-      <td>2.2137</td>
-      <td>2021-12-19</td>
-      <td>8427616</td>
-      <td>48473.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>698 rows × 7 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Notes</strong><br>
-Cases: means cumulative cases<br>
-New cases: means new daily cases (the delta between Cases on a given day and Cases on the day before)</p>
-
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Confirmed-cases---France">Confirmed cases - France<a class="anchor-link" href="#Confirmed-cases---France">&#182;</a></h1><p><strong>New Cases</strong>
-<img src="Assets/France_newcases.png" alt="alt text"></p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Note</strong>: 5 waves</p>
-
-</div>
-</div></section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Cumulative Cases</strong>
-<img src="Assets/France_cumulcases.png" alt="alt text"></p>
-
-</div>
-</div></section></section><section><section>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Confirmed-cases---Pivoting-the-data-(NSW)">Confirmed cases - Pivoting the data (NSW)<a class="anchor-link" href="#Confirmed-cases---Pivoting-the-data-(NSW)">&#182;</a></h1>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">confirmed_cases</span><span class="p">[</span><span class="n">confirmed_cases</span><span class="p">[</span><span class="s1">&#39;Province/State&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;New South Wales&#39;</span><span class="p">]</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span>
-<span class="n">x_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s1">&#39;%m/</span><span class="si">%d</span><span class="s1">/%y&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;Newcases&#39;</span><span class="p">]</span>
-<span class="n">z</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">confirmed_cases</span><span class="p">[(</span><span class="n">confirmed_cases</span><span class="p">[</span><span class="s1">&#39;Country/Region&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;France&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">confirmed_cases</span><span class="p">[</span><span class="s1">&#39;Province/State&#39;</span><span class="p">]</span><span class="o">==</span> <span class="s1">&#39;Other&#39;</span><span class="p">)]</span>
 </pre></div>
 
      </div>
@@ -14899,54 +14722,54 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
   </thead>
   <tbody>
     <tr>
-      <th>34202</th>
-      <td>New South Wales</td>
-      <td>Australia</td>
-      <td>-33.8688</td>
-      <td>151.2093</td>
+      <th>82708</th>
+      <td>Other</td>
+      <td>France</td>
+      <td>46.2276</td>
+      <td>2.2137</td>
       <td>2020-01-22</td>
       <td>0</td>
       <td>0.0</td>
     </tr>
     <tr>
-      <th>34203</th>
-      <td>New South Wales</td>
-      <td>Australia</td>
-      <td>-33.8688</td>
-      <td>151.2093</td>
+      <th>82709</th>
+      <td>Other</td>
+      <td>France</td>
+      <td>46.2276</td>
+      <td>2.2137</td>
       <td>2020-01-23</td>
       <td>0</td>
       <td>0.0</td>
     </tr>
     <tr>
-      <th>34204</th>
-      <td>New South Wales</td>
-      <td>Australia</td>
-      <td>-33.8688</td>
-      <td>151.2093</td>
+      <th>82710</th>
+      <td>Other</td>
+      <td>France</td>
+      <td>46.2276</td>
+      <td>2.2137</td>
       <td>2020-01-24</td>
-      <td>0</td>
-      <td>0.0</td>
+      <td>2</td>
+      <td>2.0</td>
     </tr>
     <tr>
-      <th>34205</th>
-      <td>New South Wales</td>
-      <td>Australia</td>
-      <td>-33.8688</td>
-      <td>151.2093</td>
+      <th>82711</th>
+      <td>Other</td>
+      <td>France</td>
+      <td>46.2276</td>
+      <td>2.2137</td>
       <td>2020-01-25</td>
-      <td>0</td>
-      <td>0.0</td>
+      <td>3</td>
+      <td>1.0</td>
     </tr>
     <tr>
-      <th>34206</th>
-      <td>New South Wales</td>
-      <td>Australia</td>
-      <td>-33.8688</td>
-      <td>151.2093</td>
+      <th>82712</th>
+      <td>Other</td>
+      <td>France</td>
+      <td>46.2276</td>
+      <td>2.2137</td>
       <td>2020-01-26</td>
       <td>3</td>
-      <td>3.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>...</th>
@@ -14959,58 +14782,58 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
       <td>...</td>
     </tr>
     <tr>
-      <th>34895</th>
-      <td>New South Wales</td>
-      <td>Australia</td>
-      <td>-33.8688</td>
-      <td>151.2093</td>
-      <td>2021-12-15</td>
-      <td>90333</td>
-      <td>1738.0</td>
+      <th>83416</th>
+      <td>Other</td>
+      <td>France</td>
+      <td>46.2276</td>
+      <td>2.2137</td>
+      <td>2021-12-30</td>
+      <td>9529614</td>
+      <td>206243.0</td>
     </tr>
     <tr>
-      <th>34896</th>
-      <td>New South Wales</td>
-      <td>Australia</td>
-      <td>-33.8688</td>
-      <td>151.2093</td>
-      <td>2021-12-16</td>
-      <td>92532</td>
-      <td>2199.0</td>
+      <th>83417</th>
+      <td>Other</td>
+      <td>France</td>
+      <td>46.2276</td>
+      <td>2.2137</td>
+      <td>2021-12-31</td>
+      <td>9761814</td>
+      <td>232200.0</td>
     </tr>
     <tr>
-      <th>34897</th>
-      <td>New South Wales</td>
-      <td>Australia</td>
-      <td>-33.8688</td>
-      <td>151.2093</td>
-      <td>2021-12-17</td>
-      <td>95000</td>
-      <td>2468.0</td>
+      <th>83418</th>
+      <td>Other</td>
+      <td>France</td>
+      <td>46.2276</td>
+      <td>2.2137</td>
+      <td>2022-01-01</td>
+      <td>9980940</td>
+      <td>219126.0</td>
     </tr>
     <tr>
-      <th>34898</th>
-      <td>New South Wales</td>
-      <td>Australia</td>
-      <td>-33.8688</td>
-      <td>151.2093</td>
-      <td>2021-12-18</td>
-      <td>97558</td>
-      <td>2558.0</td>
+      <th>83419</th>
+      <td>Other</td>
+      <td>France</td>
+      <td>46.2276</td>
+      <td>2.2137</td>
+      <td>2022-01-02</td>
+      <td>10039372</td>
+      <td>58432.0</td>
     </tr>
     <tr>
-      <th>34899</th>
-      <td>New South Wales</td>
-      <td>Australia</td>
-      <td>-33.8688</td>
-      <td>151.2093</td>
-      <td>2021-12-19</td>
-      <td>100040</td>
-      <td>2482.0</td>
+      <th>83420</th>
+      <td>Other</td>
+      <td>France</td>
+      <td>46.2276</td>
+      <td>2.2137</td>
+      <td>2022-01-03</td>
+      <td>10106833</td>
+      <td>67461.0</td>
     </tr>
   </tbody>
 </table>
-<p>698 rows × 7 columns</p>
+<p>713 rows × 7 columns</p>
 </div>
 </div>
 
@@ -15020,38 +14843,50 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Notes</strong><br>
+Cases: means cumulative cases<br>
+New cases: means new daily cases (the delta between Cases on a given day and Cases on the day before)</p>
+
+</div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Confirmed-cases---Australia,-NSW">Confirmed cases - Australia, NSW<a class="anchor-link" href="#Confirmed-cases---Australia,-NSW">&#182;</a></h1><p><strong>New Cases</strong>
-<img src="Assets/NSW_newcases.png" alt="alt text"></p>
+<h1 id="Confirmed-cases---France">Confirmed cases - France<a class="anchor-link" href="#Confirmed-cases---France">&#182;</a></h1><p><strong>New Cases</strong>
+<img src="Assets/Displayed/France_newcases.png" alt="alt text"></p>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Note</strong>: 3 waves - 1st wave in Apr20 (original sars-cov-2), 2nd wave Delta variant Aug21, 3rd wave Dec21 as all restrictions are lifted (due to vaccination rates exceeding target of 80%)</p>
+<p><strong>Note</strong>: 5 waves</p>
 
 </div>
 </div></section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Cumulative Cases</strong>
-<img src="Assets/NSW_cumulcases.png" alt="alt text"></p>
+<img src="Assets/Displayed/France_cumulCases.png" alt="alt text"></p>
 
 </div>
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Latest-Data---what-the-data-Looks-like--(as-downloaded-from-raw-file)">Latest Data - what the data Looks like  (as downloaded from raw file)<a class="anchor-link" href="#Latest-Data---what-the-data-Looks-like--(as-downloaded-from-raw-file)">&#182;</a></h1>
+<h1 id="Confirmed-cases---Pivoting-the-data-(NSW)">Confirmed cases - Pivoting the data (NSW)<a class="anchor-link" href="#Confirmed-cases---Pivoting-the-data-(NSW)">&#182;</a></h1>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[222]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">latest_data</span><span class="p">[</span><span class="n">latest_data</span><span class="o">.</span><span class="n">Country_Region</span> <span class="o">==</span><span class="s1">&#39;Australia&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="n">confirmed_cases</span><span class="p">[</span><span class="n">confirmed_cases</span><span class="p">[</span><span class="s1">&#39;Province/State&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;New South Wales&#39;</span><span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span>
+<span class="n">x_values</span> <span class="o">=</span> <span class="p">[</span><span class="n">dt</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="s1">&#39;%m/</span><span class="si">%d</span><span class="s1">/%y&#39;</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">z</span><span class="p">[</span><span class="s1">&#39;Newcases&#39;</span><span class="p">]</span>
+<span class="n">z</span>
 </pre></div>
 
      </div>
@@ -15067,7 +14902,7 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[222]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 
 
 
@@ -15090,9 +14925,211 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
   <thead>
     <tr style="text-align: right;">
       <th></th>
+      <th>Province/State</th>
+      <th>Country/Region</th>
+      <th>Lat</th>
+      <th>Long</th>
+      <th>Date</th>
+      <th>Cases</th>
+      <th>Newcases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>34937</th>
+      <td>New South Wales</td>
+      <td>Australia</td>
+      <td>-33.8688</td>
+      <td>151.2093</td>
+      <td>2020-01-22</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>34938</th>
+      <td>New South Wales</td>
+      <td>Australia</td>
+      <td>-33.8688</td>
+      <td>151.2093</td>
+      <td>2020-01-23</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>34939</th>
+      <td>New South Wales</td>
+      <td>Australia</td>
+      <td>-33.8688</td>
+      <td>151.2093</td>
+      <td>2020-01-24</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>34940</th>
+      <td>New South Wales</td>
+      <td>Australia</td>
+      <td>-33.8688</td>
+      <td>151.2093</td>
+      <td>2020-01-25</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>34941</th>
+      <td>New South Wales</td>
+      <td>Australia</td>
+      <td>-33.8688</td>
+      <td>151.2093</td>
+      <td>2020-01-26</td>
+      <td>3</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>35645</th>
+      <td>New South Wales</td>
+      <td>Australia</td>
+      <td>-33.8688</td>
+      <td>151.2093</td>
+      <td>2021-12-30</td>
+      <td>166373</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>35646</th>
+      <td>New South Wales</td>
+      <td>Australia</td>
+      <td>-33.8688</td>
+      <td>151.2093</td>
+      <td>2021-12-31</td>
+      <td>187504</td>
+      <td>21131.0</td>
+    </tr>
+    <tr>
+      <th>35647</th>
+      <td>New South Wales</td>
+      <td>Australia</td>
+      <td>-33.8688</td>
+      <td>151.2093</td>
+      <td>2022-01-01</td>
+      <td>228307</td>
+      <td>40803.0</td>
+    </tr>
+    <tr>
+      <th>35648</th>
+      <td>New South Wales</td>
+      <td>Australia</td>
+      <td>-33.8688</td>
+      <td>151.2093</td>
+      <td>2022-01-02</td>
+      <td>249064</td>
+      <td>20757.0</td>
+    </tr>
+    <tr>
+      <th>35649</th>
+      <td>New South Wales</td>
+      <td>Australia</td>
+      <td>-33.8688</td>
+      <td>151.2093</td>
+      <td>2022-01-03</td>
+      <td>272160</td>
+      <td>23096.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>713 rows × 7 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Confirmed-cases---Australia,-NSW">Confirmed cases - Australia, NSW<a class="anchor-link" href="#Confirmed-cases---Australia,-NSW">&#182;</a></h1><p><strong>New Cases</strong>
+<img src="Assets/Displayed/NSW_newcases.png" alt="alt text"></p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Note</strong>: 1st wave in Apr20 (original sars-cov-2); 2nd wave Aug21 Delta ; 3rd wave Dec21 Omicron as all restrictions are lifted (due to vaccination rates exceeding target of 80%). Anomalies are fixed around NYE</p>
+
+</div>
+</div></section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><strong>Cumulative Cases</strong>
+<img src="Assets/Displayed/NSW_cumulCases.png" alt="alt text"></p>
+
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Latest-Data---what-the-data-Looks-like--(as-downloaded-from-raw-file)">Latest Data - what the data Looks like  (as downloaded from raw file)<a class="anchor-link" href="#Latest-Data---what-the-data-Looks-like--(as-downloaded-from-raw-file)">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">latest_data</span><span class="p">[</span><span class="n">latest_data</span><span class="o">.</span><span class="n">Country_Region</span> <span class="o">==</span><span class="s1">&#39;Australia&#39;</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Province_State</th>
       <th>FIPS</th>
       <th>Admin2</th>
-      <th>Province_State</th>
       <th>Country_Region</th>
       <th>Last_Update</th>
       <th>Lat</th>
@@ -15109,139 +15146,139 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
   <tbody>
     <tr>
       <th>8</th>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>Australian Capital Territory</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>Australia</td>
-      <td>2021-12-20 04:21:43</td>
+      <td>2022-01-04 04:22:17</td>
       <td>-35.4735</td>
       <td>149.0124</td>
-      <td>2291</td>
+      <td>5323</td>
       <td>15</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Australian Capital Territory, Australia</td>
-      <td>535.155338</td>
-      <td>0.654736</td>
+      <td>1458.537725</td>
+      <td>0.281796</td>
     </tr>
     <tr>
       <th>9</th>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>New South Wales</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>Australia</td>
-      <td>2021-12-20 04:21:43</td>
+      <td>2022-01-04 04:22:17</td>
       <td>-33.8688</td>
       <td>151.2093</td>
-      <td>100040</td>
-      <td>643</td>
+      <td>272160</td>
+      <td>675</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>New South Wales, Australia</td>
-      <td>1232.323232</td>
-      <td>0.642743</td>
+      <td>3352.549889</td>
+      <td>0.248016</td>
     </tr>
     <tr>
       <th>10</th>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>Northern Territory</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>Australia</td>
-      <td>2021-12-20 04:21:43</td>
+      <td>2022-01-04 04:22:17</td>
       <td>-12.4634</td>
       <td>130.8456</td>
-      <td>360</td>
+      <td>880</td>
       <td>1</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Northern Territory, Australia</td>
-      <td>146.579805</td>
-      <td>0.277778</td>
+      <td>358.306189</td>
+      <td>0.113636</td>
     </tr>
     <tr>
       <th>11</th>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>Queensland</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>Australia</td>
-      <td>2021-12-20 04:21:43</td>
+      <td>2022-01-04 04:22:17</td>
       <td>-27.4698</td>
       <td>153.0251</td>
-      <td>2356</td>
+      <td>23941</td>
       <td>7</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Queensland, Australia</td>
-      <td>46.056104</td>
-      <td>0.297114</td>
+      <td>579.141824</td>
+      <td>0.029239</td>
     </tr>
     <tr>
       <th>12</th>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>South Australia</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>Australia</td>
-      <td>2021-12-20 04:21:43</td>
+      <td>2022-01-04 04:22:17</td>
       <td>-34.9285</td>
       <td>138.6007</td>
-      <td>1401</td>
-      <td>4</td>
+      <td>18021</td>
+      <td>8</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>South Australia, Australia</td>
-      <td>79.760888</td>
-      <td>0.285510</td>
+      <td>1210.760034</td>
+      <td>0.044393</td>
     </tr>
     <tr>
       <th>13</th>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>Tasmania</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>Australia</td>
-      <td>2021-12-20 04:21:43</td>
+      <td>2022-01-04 04:22:17</td>
       <td>-42.8821</td>
       <td>147.3272</td>
-      <td>250</td>
+      <td>2259</td>
       <td>13</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Tasmania, Australia</td>
-      <td>46.685341</td>
-      <td>5.200000</td>
+      <td>421.848739</td>
+      <td>0.575476</td>
     </tr>
     <tr>
       <th>14</th>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>Victoria</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>Australia</td>
-      <td>2021-12-20 04:21:43</td>
+      <td>2022-01-04 04:22:17</td>
       <td>-37.8136</td>
       <td>144.9631</td>
-      <td>146859</td>
-      <td>1454</td>
+      <td>213548</td>
+      <td>1542</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Victoria, Australia</td>
-      <td>2215.101284</td>
-      <td>0.990065</td>
+      <td>3220.983725</td>
+      <td>0.722086</td>
     </tr>
     <tr>
       <th>15</th>
-      <td>NaN</td>
-      <td>NaN</td>
       <td>Western Australia</td>
+      <td>NaN</td>
+      <td>NaN</td>
       <td>Australia</td>
-      <td>2021-12-20 04:21:43</td>
+      <td>2022-01-04 04:22:17</td>
       <td>-31.9505</td>
       <td>115.8605</td>
-      <td>1125</td>
+      <td>1176</td>
       <td>9</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Western Australia, Australia</td>
-      <td>42.765909</td>
-      <td>0.800000</td>
+      <td>44.704630</td>
+      <td>0.765306</td>
     </tr>
   </tbody>
 </table>
@@ -15269,7 +15306,7 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[264]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">countriesrank</span> <span class="o">=</span> <span class="n">latest_data</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Country_Region&#39;</span><span class="p">)[[</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span><span class="s1">&#39;Confirmed&#39;</span><span class="p">,</span><span class="s1">&#39;Deaths&#39;</span><span class="p">,</span><span class="s1">&#39;Recovered&#39;</span><span class="p">,</span><span class="s1">&#39;Active&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Population&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
@@ -15289,7 +15326,7 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[264]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
 
 
 
@@ -15331,7 +15368,7 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
     <tr>
       <th>China</th>
       <td>1.404676e+09</td>
-      <td>112989</td>
+      <td>115597</td>
       <td>4849</td>
       <td>0.0</td>
       <td>0.0</td>
@@ -15339,32 +15376,32 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
     <tr>
       <th>India</th>
       <td>1.371337e+09</td>
-      <td>34746838</td>
-      <td>477554</td>
+      <td>34960261</td>
+      <td>482017</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>US</th>
-      <td>3.323034e+08</td>
-      <td>50846828</td>
-      <td>806439</td>
+      <td>3.322895e+08</td>
+      <td>56189547</td>
+      <td>827748</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>Indonesia</th>
       <td>2.735236e+08</td>
-      <td>4260544</td>
-      <td>144002</td>
+      <td>4263433</td>
+      <td>144102</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
     <tr>
       <th>Brazil</th>
       <td>2.101471e+08</td>
-      <td>22213762</td>
-      <td>617803</td>
+      <td>22309081</td>
+      <td>619473</td>
       <td>0.0</td>
       <td>0.0</td>
     </tr>
@@ -15436,7 +15473,7 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[266]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">countriesrank</span> <span class="o">=</span> <span class="n">countriesrank</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">countriesrank</span><span class="o">.</span><span class="n">index</span><span class="o">!=</span><span class="s1">&#39;Afghanistan&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Population&#39;</span><span class="p">)</span>
@@ -15459,7 +15496,7 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[266]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
 
 
 
@@ -15507,222 +15544,222 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
     <tr>
       <th>Thailand</th>
       <td>6.979998e+07</td>
-      <td>2191528</td>
-      <td>21377</td>
+      <td>2232485</td>
+      <td>21738</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.031397</td>
-      <td>0.000306</td>
-      <td>0.009754</td>
+      <td>0.031984</td>
+      <td>0.000311</td>
+      <td>0.009737</td>
     </tr>
     <tr>
       <th>Germany</th>
       <td>8.301921e+07</td>
-      <td>6812746</td>
-      <td>108356</td>
+      <td>7258803</td>
+      <td>112584</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.082062</td>
-      <td>0.001305</td>
-      <td>0.015905</td>
+      <td>0.087435</td>
+      <td>0.001356</td>
+      <td>0.015510</td>
     </tr>
     <tr>
       <th>Iran</th>
       <td>8.399295e+07</td>
-      <td>6170979</td>
-      <td>131083</td>
+      <td>6198590</td>
+      <td>131702</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.073470</td>
-      <td>0.001561</td>
-      <td>0.021242</td>
+      <td>0.073799</td>
+      <td>0.001568</td>
+      <td>0.021247</td>
     </tr>
     <tr>
       <th>Turkey</th>
       <td>8.433907e+07</td>
-      <td>9173089</td>
-      <td>80415</td>
+      <td>9599640</td>
+      <td>82795</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.108764</td>
-      <td>0.000953</td>
-      <td>0.008766</td>
+      <td>0.113822</td>
+      <td>0.000982</td>
+      <td>0.008625</td>
     </tr>
     <tr>
       <th>Congo (Kinshasa)</th>
       <td>8.956140e+07</td>
-      <td>64448</td>
-      <td>1126</td>
+      <td>74793</td>
+      <td>1205</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000720</td>
+      <td>0.000835</td>
       <td>0.000013</td>
-      <td>0.017471</td>
+      <td>0.016111</td>
     </tr>
     <tr>
       <th>Vietnam</th>
       <td>9.733858e+07</td>
-      <td>1540478</td>
-      <td>29566</td>
+      <td>1778976</td>
+      <td>33021</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.015826</td>
-      <td>0.000304</td>
-      <td>0.019193</td>
+      <td>0.018276</td>
+      <td>0.000339</td>
+      <td>0.018562</td>
     </tr>
     <tr>
       <th>Egypt</th>
       <td>1.023344e+08</td>
-      <td>375330</td>
-      <td>21361</td>
+      <td>387882</td>
+      <td>21817</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.003668</td>
-      <td>0.000209</td>
-      <td>0.056913</td>
+      <td>0.003790</td>
+      <td>0.000213</td>
+      <td>0.056246</td>
     </tr>
     <tr>
       <th>Philippines</th>
       <td>1.095811e+08</td>
-      <td>2837577</td>
-      <td>50739</td>
+      <td>2855819</td>
+      <td>51586</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.025895</td>
-      <td>0.000463</td>
-      <td>0.017881</td>
+      <td>0.026061</td>
+      <td>0.000471</td>
+      <td>0.018063</td>
     </tr>
     <tr>
       <th>Ethiopia</th>
       <td>1.149636e+08</td>
-      <td>376375</td>
-      <td>6866</td>
+      <td>428796</td>
+      <td>6969</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.003274</td>
-      <td>0.000060</td>
-      <td>0.018242</td>
+      <td>0.003730</td>
+      <td>0.000061</td>
+      <td>0.016252</td>
     </tr>
     <tr>
       <th>Japan</th>
       <td>1.261669e+08</td>
-      <td>1729030</td>
-      <td>18375</td>
+      <td>1733901</td>
+      <td>18392</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.013704</td>
+      <td>0.013743</td>
       <td>0.000146</td>
-      <td>0.010627</td>
+      <td>0.010607</td>
     </tr>
     <tr>
       <th>Mexico</th>
       <td>1.277923e+08</td>
-      <td>3932545</td>
-      <td>297835</td>
+      <td>3993464</td>
+      <td>299581</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.030773</td>
-      <td>0.002331</td>
-      <td>0.075736</td>
+      <td>0.031250</td>
+      <td>0.002344</td>
+      <td>0.075018</td>
     </tr>
     <tr>
       <th>Russia</th>
       <td>1.466447e+08</td>
-      <td>10037546</td>
-      <td>291336</td>
+      <td>10374292</td>
+      <td>305096</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.068448</td>
-      <td>0.001987</td>
-      <td>0.029025</td>
+      <td>0.070744</td>
+      <td>0.002081</td>
+      <td>0.029409</td>
     </tr>
     <tr>
       <th>Bangladesh</th>
       <td>1.646894e+08</td>
-      <td>1581083</td>
-      <td>28048</td>
+      <td>1587140</td>
+      <td>28081</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.009600</td>
-      <td>0.000170</td>
-      <td>0.017740</td>
+      <td>0.009637</td>
+      <td>0.000171</td>
+      <td>0.017693</td>
     </tr>
     <tr>
       <th>Nigeria</th>
       <td>2.061396e+08</td>
-      <td>223483</td>
-      <td>2984</td>
+      <td>244120</td>
+      <td>3045</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.001084</td>
-      <td>0.000014</td>
-      <td>0.013352</td>
+      <td>0.001184</td>
+      <td>0.000015</td>
+      <td>0.012473</td>
     </tr>
     <tr>
       <th>Pakistan</th>
       <td>2.078318e+08</td>
-      <td>1291467</td>
-      <td>28878</td>
+      <td>1297865</td>
+      <td>28945</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.006214</td>
+      <td>0.006245</td>
       <td>0.000139</td>
-      <td>0.022361</td>
+      <td>0.022302</td>
     </tr>
     <tr>
       <th>Brazil</th>
       <td>2.101471e+08</td>
-      <td>22213762</td>
-      <td>617803</td>
+      <td>22309081</td>
+      <td>619473</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.105706</td>
-      <td>0.002940</td>
-      <td>0.027812</td>
+      <td>0.106159</td>
+      <td>0.002948</td>
+      <td>0.027768</td>
     </tr>
     <tr>
       <th>Indonesia</th>
       <td>2.735236e+08</td>
-      <td>4260544</td>
-      <td>144002</td>
+      <td>4263433</td>
+      <td>144102</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.015577</td>
-      <td>0.000526</td>
-      <td>0.033799</td>
+      <td>0.015587</td>
+      <td>0.000527</td>
+      <td>0.033800</td>
     </tr>
     <tr>
       <th>US</th>
-      <td>3.323034e+08</td>
-      <td>50846828</td>
-      <td>806439</td>
+      <td>3.322895e+08</td>
+      <td>56189547</td>
+      <td>827748</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.153013</td>
-      <td>0.002427</td>
-      <td>0.015860</td>
+      <td>0.169098</td>
+      <td>0.002491</td>
+      <td>0.014731</td>
     </tr>
     <tr>
       <th>India</th>
       <td>1.371337e+09</td>
-      <td>34746838</td>
-      <td>477554</td>
+      <td>34960261</td>
+      <td>482017</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.025338</td>
-      <td>0.000348</td>
-      <td>0.013744</td>
+      <td>0.025494</td>
+      <td>0.000351</td>
+      <td>0.013788</td>
     </tr>
     <tr>
       <th>China</th>
       <td>1.404676e+09</td>
-      <td>112989</td>
+      <td>115597</td>
       <td>4849</td>
       <td>0.0</td>
       <td>0.0</td>
-      <td>0.000080</td>
+      <td>0.000082</td>
       <td>0.000003</td>
-      <td>0.042916</td>
+      <td>0.041947</td>
     </tr>
   </tbody>
 </table>
@@ -15740,7 +15777,7 @@ New cases: means new daily cases (the delta between Cases on a given day and Cas
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Death-toll-for-top-20-most-populated-countries">Death toll for top-20 most populated countries<a class="anchor-link" href="#Death-toll-for-top-20-most-populated-countries">&#182;</a></h1><p>Sorted by population size in descending order (China 1st, India 2nd etc.)<br>
 Size of the Bar represents the number of deaths
-<img src="Assets/deaths_ranking.png" alt="alt text"></p>
+<img src="Assets/Displayed/deaths-ranking.png" alt="alt text"></p>
 
 </div>
 </div></section></section><section><section>
@@ -15749,7 +15786,7 @@ Size of the Bar represents the number of deaths
 <h1 id="Bubble-chart:-%-Infected-population,Fatality,-Death-toll">Bubble chart: % Infected population,Fatality, Death toll<a class="anchor-link" href="#Bubble-chart:-%-Infected-population,Fatality,-Death-toll">&#182;</a></h1><ul>
 <li><strong>x axis</strong> = %population infected (cumulative cases/population), approximation </li>
 <li><strong>y axis</strong> = Fatality rate | <strong>bubble size</strong> = # deaths
-<img src="Assets/bubble.png" alt="alt text"></li>
+<img src="Assets/Displayed/bubble-chart.png" alt="alt text"></li>
 </ul>
 
 </div>
